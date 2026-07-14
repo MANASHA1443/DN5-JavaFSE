@@ -8,12 +8,14 @@
         <outputRelativeToContentRoot value="true" />
         <module name="account" />
         <module name="loan" />
+        <module name="eureka-discovery-server" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="account" options="-parameters" />
+      <module name="eureka-discovery-server" options="-parameters" />
       <module name="loan" options="-parameters" />
     </option>
   </component>
