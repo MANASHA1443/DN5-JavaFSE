@@ -1,0 +1,13 @@
+.App{
+  margin-top:40px;
+  margin-left:100px;
+  font-family: Arial;
+}
+
+table td{
+  padding:5px;
+}
+
+button{
+  margin-top:10px;
+}
