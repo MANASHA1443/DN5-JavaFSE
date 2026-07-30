@@ -1,0 +1,34 @@
+<h2>Student Course Portal</h2>
+
+<p *ngIf="isLoading">
+    Loading Courses...
+</p>
+
+<div *ngIf="!isLoading; else noCourses">
+
+    <app-course-card
+
+            *ngFor="let course of courses; trackBy: trackByCourseId"
+
+            [course]="course"
+
+            (enrollRequested)="onEnroll($event)">
+
+    </app-course-card>
+
+</div>
+
+<ng-template #noCourses>
+
+    <p>No Courses Available</p>
+
+</ng-template>
+
+<br>
+
+<p *ngIf="selectedCourseId">
+
+    Selected Course :
+    <b>{{selectedCourseId}}</b>
+
+</p>
